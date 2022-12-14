@@ -11,3 +11,5 @@ Possible APIs
 - http://numbersapi.com/#42
 - https://random-d.uk/api
 - https://github.com/wh-iterabb-it/meowfacts 
+- https://www.fruityvice.com/
+- https://developer.edamam.com/edamam-docs-recipe-api
