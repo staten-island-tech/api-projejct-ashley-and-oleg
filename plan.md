@@ -10,11 +10,11 @@ Possible APIs
 
 
 - https://bestbuyapis.github.io/api-documentation/#facets
-<!-- create homepage that displays all the data -->
-<!-- create search bar for user input-->
-<!-- create function that iterates through the data based on user input. Can use for user_input in thing, return(something.html) -->
-<!-- put the data in cards -->
-<!-- use if/then statement for if user_input not in data, print('nothing is found') -->
+<!-- create homepage that displays all the data of trending products -->
+<!-- create navbar for user input, with search bar to find specfic product, button for home page, and cart-->
+<!-- make a base.html with the navbar-->
+<!-- create function that iterates through the data based on user input. Can use for user_input in thing, return('dynamicpage.html') -->
+<!-- use if/then statement for if user_input not in data, return_template('error.html')-->
 <!-- create error page -->
 
 
