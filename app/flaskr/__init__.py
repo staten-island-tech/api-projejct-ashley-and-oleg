@@ -1,13 +1,13 @@
 import os
 
-from flask import Flask, render_template
-from .me import *
+from flask import Flask
+
 
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev',                                 
+        SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
 
@@ -23,16 +23,10 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    # a simple page that says hello
     @app.route('/')
-    def home():
-        return render_template('home.html', me=me)
-    @app.route('/interests/<interest>')
-    def getInterest(interest):
-            if interest in me["interestnames"]:
-                desc=me[interest]["desc"]
-                img=me[interest]["img"]
-                return render_template('interests.html', me=me, interest=interest, desc=desc, img=img)
-            else:
-                return render_template('gloop.html')
+    def hello():
+        return 'Hello, World!'
+
     return app
-    
