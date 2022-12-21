@@ -10,5 +10,5 @@ data = requests.get("https://api.bestbuy.com/v1/products/trendingViewed(category
 app = Flask(__name__)
 
 @app.route("/")
-    def home():
-        return render_template('base.html', data=data)
+def home():
+    return render_template('base.html', data=data)
