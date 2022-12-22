@@ -2,4 +2,8 @@
 {% block title %} Homepage {% endblock %}
 {% block content %}
 <h1>test</h1>
+{% for thing in data.results %}
+<h1>hello</h1>
+<h2>{{ thing.images }}</h2>
+{% endfor %}
 {% endblock %}
