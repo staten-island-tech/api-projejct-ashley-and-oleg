@@ -3,7 +3,8 @@
 {% block content %}
 <h1>test</h1>
 {% for thing in data.results %}
-<h1>hello</h1>
-<h2>{{ thing.images }}</h2>
+<!-- <h2>{{ thing }}</h2> -->
+<h2>{{ thing['names']['title'] }}</h2>
+<img src="{{ thing['images']['standard'] }}">
 {% endfor %}
 {% endblock %}
