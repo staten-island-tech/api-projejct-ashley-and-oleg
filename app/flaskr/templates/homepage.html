@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} Homepage {% endblock %}
+{% block content %}
+<h1>Homepage</h1>
+{% for thing in data.results %}
+<!-- <h2>{{ thing }}</h2> -->
+<h2>{{ thing['names']['title'] }}</h2>
+<img src="{{ thing['images']['standard'] }}">
+{% endfor %}
+{% endblock %}
