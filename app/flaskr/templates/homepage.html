@@ -2,6 +2,14 @@
 {% block title %} Homepage {% endblock %}
 {% block content %}
 <h1>Homepage</h1>
+<!-- search bar -->
+<div class="search">
+    <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit<i class="search"></i></button>
+    </form>
+</div>
+<!-- printing API data -->
 {% for thing in data.results %}
 <!-- <h2>{{ thing }}</h2> -->
 <h2>{{ thing['names']['title'] }}</h2>
