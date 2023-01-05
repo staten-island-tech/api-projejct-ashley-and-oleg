@@ -74,3 +74,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.flex-container{
+  display: flex;
+  justify-content: space-evenly; /* allocateas extra space inbetween or around our elements */ 
+  flex-wrap: wrap; /* wraps next card to new line when space is gone */
+  align-items: center;
+  width: 95vw;
+  margin: 50px auto; /* centers element */
+  
+} 
+.pageimage{
+  width: 90%
+}
+.card{
+  height: 660px;
+  width: 27%;
+  background-color: #1eab8b;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;    
+  flex-direction: column;
+  border: 3px solid black;
+  justify-content: space-between;
+  margin: 30px 0;
+  border-radius: 20px;
+  transition: all 0.3s;
+
+}

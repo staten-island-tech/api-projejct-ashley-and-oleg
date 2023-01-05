@@ -8,6 +8,10 @@
 {% for thing in data.results %}
 <!-- <h2>{{ thing }}</h2> -->
 <h2>{{ thing['names']['title'] }}</h2>
-<img src="{{ thing['images']['standard'] }}">
+<div class= "flex-container">
+    <div class="card">
+        <img class="pageimage"src="{{ thing['images']['standard'] }}">
+    </div>
+</div>
 {% endfor %}
 {% endblock %}
