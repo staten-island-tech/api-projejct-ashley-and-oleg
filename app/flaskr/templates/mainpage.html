@@ -5,13 +5,15 @@
 <!-- search bar -->
 
 <!-- printing API data -->
-{% for thing in data.results %}
+
 <!-- <h2>{{ thing }}</h2> -->
-<h2>{{ thing['names']['title'] }}</h2>
+
 <div class= "flex-container">
+    {% for thing in data.results %}
     <div class="card">
+        <h2>{{ thing['names']['title'] }}</h2>
         <img class="pageimage"src="{{ thing['images']['standard'] }}">
     </div>
+    {% endfor %}
 </div>
-{% endfor %}
 {% endblock %}

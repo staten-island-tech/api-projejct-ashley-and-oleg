@@ -81,14 +81,13 @@
   align-items: center;
   width: 95vw;
   margin: 50px auto; /* centers element */
-  
 } 
 .pageimage{
   width: 90%
 }
 .card{
   height: 660px;
-  width: 27%;
+  width: 25%;
   background-color: #1eab8b;
   display: flex;
   align-items: center;
