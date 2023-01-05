@@ -14,7 +14,7 @@ Possible APIs
 <!-- create navbar for user input, with search bar to find specfic product, button for home page, and cart-->
 <!-- make a base.html with the navbar-->
 <!-- create function that iterates through the data based on user input. Can use for user_input in thing, return('dynamicpage.html') -->
-<!-- use if/then statement for if user_input not in data, return_template('error.html')-->
+<!-- use if/else statement for if user_input not in data, return_template('error.html')-->
 <!-- create error page -->
 
 
@@ -23,3 +23,8 @@ Possible APIs
 
 
  tyP7wRXV364rYiZc16B7dJAt
+
+Possible background for website
+- #f3f4ed and #666464
+- #e9efea and #102e2c
+- #ebd6a8 and #586572
