@@ -9,10 +9,16 @@
         <button type="submit">Submit<i class="search"></i></button>
     </form>
 </div>
-<!-- printing API data -->
+<!-- printing API data number 1 -->
 {% for thing in data.results %}
 <!-- <h2>{{ thing }}</h2> -->
 <h2>{{ thing['names']['title'] }}</h2>
 <img src="{{ thing['images']['standard'] }}">
 {% endfor %}
+<!-- printing API data number 2 -->
+{% for movie in data2.results %}
+<h2>{{ movie['names']['title'] }}</h2>
+<img src="{{ movie['images']['standard'] }}">
+{% endfor %}
+
 {% endblock %}
