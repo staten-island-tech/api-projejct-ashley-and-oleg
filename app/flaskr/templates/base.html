@@ -8,20 +8,14 @@
     <title>{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
+
 <body>
     <div class="topnav">
-            <a id="topnavleft"class="active" href="#home">Home</a>
-            <a id="topnavleft"href="#news">News</a>
-            <a id="topnavright"href="#contact">Contact</a>
-            <a id="topnavright"href="#about">About</a>
-            <a id="topnavright">
-                <div class="search">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">Submit<i class="search"></i></button>
-                    </form>
-                </div>
-            </a>
-    </div>  
+        <a id="topnavleft" class="active" href="#home">Home</a>
+        <a id="topnavleft" href="#news">News</a>
+        <a id="topnavright" href="#contact">Contact</a>
+        <a id="topnavright" href="#about">About</a>
+        <a id="topnavright"></a>
+    </div>
     {%block content %} {% endblock %}
 </body>
