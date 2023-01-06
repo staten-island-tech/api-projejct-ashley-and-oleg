@@ -86,7 +86,7 @@
   width: 90%
 }
 .card{
-  height: 660px;
+  height: 700px;
   width: 25%;
   background-color: #1eab8b;
   display: flex;
@@ -99,4 +99,8 @@
   border-radius: 20px;
   transition: all 0.3s;
 
+}
+#logo {
+  width: auto;
+  height: 150px;
 }
