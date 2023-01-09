@@ -9,3 +9,13 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template('mainpage.html', data=data, data2=data2)
+@app.route("/product/<path:product>")
+def poopy(product, data):
+    if product in data or data2:
+        image = data['images']
+        desc = data['descriptions']
+        name = data['names']['title']
+        return render_template('product.html', image=image, desc=desc, name=name)
+    else:
+        return('U SUCK LOL')
+

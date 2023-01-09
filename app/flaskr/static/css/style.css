@@ -81,13 +81,16 @@
   width: 95vw;
   margin: 50px auto; /* centers element */
 } 
-.pageimage{
-  width: 60%
+#pageimage{
+  width: 50%
+}
+.container {
+  text-align: center;
 }
 .card{
   height: 700px;
   width: 25%;
-  background-color: #1eab8b;
+  background-color: #f3f4ed;
   display: flex;
   align-items: center;
   flex-wrap: wrap;    
@@ -97,7 +100,21 @@
   margin: 30px 0;
   border-radius: 20px;
   transition: all 0.3s;
-
+}
+.card-title{
+  display: inline-flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #666464;
+  color: black;
+  margin-top: 1.5%;
+  border: 3px solid black;
+  border-radius: 100px;
+  color: #b6e0de;
+}
+.card-img{  
+  border-radius: 5%;
+  border: 3px solid black;
 }
 .logo {
   width: auto;
