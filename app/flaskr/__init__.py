@@ -35,6 +35,6 @@ def poopy(product):
 def searchbar(cards):
     list = []
     for thing in data or data2:
-        list.append(thing)
+        list.append(thing['names']['title'])
     if cards in list:
         return render_template('test.html', data=data, data2=data2)

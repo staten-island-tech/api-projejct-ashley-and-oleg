@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 {% block title %} test {% endblock %}
 {% block content %}
+{% for thing in list %}
+{% if name in thing['names']['title'] %}
 <h1>test</h1>
+<h2>hi</h2>
+{% endif %}
+{% endfor %}
+
 {% endblock %}
