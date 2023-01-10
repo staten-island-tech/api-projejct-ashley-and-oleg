@@ -2,13 +2,15 @@
 {% block title %} Homepage {% endblock %}
 {% block content %}
 <h1>Homepage</h1>
-<!-- search bar -->
 
-<!-- printing API data -->
+<body>
+    <form method="post">
+        <label for="title">Search</label>
+        <input name="names" id="title" value="{{ request.form['names'] }}" required />
+    </form>
+</body>
 
-<!-- <h2>{{ thing }}</h2> -->
-
-<div class= "flex-container">
+<div class="flex-container">
     {% for thing in data.results %}
     <div class="card">
         <div class="container">
