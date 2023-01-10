@@ -174,3 +174,18 @@
 .show {
   display: block;
 }
+button{
+  border-color: aliceblue;
+  border-radius: 20px;
+  background-color: #b6e0de;
+  margin-bottom: 25px;
+
+}
+
+a:link, a:visited{
+  color: #0394fc;
+  text-decoration: none;
+}
+a:hover{
+  color:red;
+}
