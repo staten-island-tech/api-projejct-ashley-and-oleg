@@ -11,11 +11,14 @@ def home():
     return render_template('mainpage.html', data=data, data2=data2)
 @app.route("/product/<path:product>")
 def poopy(product):
-    if product in data:
-        image = data['images']
-        desc = data['descriptions']
-        name = data['names']['title']
-        return render_template('product.html', image=image, desc=desc, name=name)
-    else:
-        return('U SUCK LOL')
+    pass
+    # if product in data:
+    #     image = data['images']
+    #     desc = data['descriptions']
+    #     name = data['names']['title']
+    #     return render_template('product.html', image=image, desc=desc, name=name)
+    # else:
+    #     return('U SUCK LOL')
 
+for x in data['metadata']:
+    print(x)    
