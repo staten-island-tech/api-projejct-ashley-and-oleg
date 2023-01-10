@@ -21,10 +21,10 @@ def getPost():
     else:
         return render_template('mainpage.html')
 
-@app.route('/<path>')
-def searchbar(cards):
-    list = []
-    for thing in data or data2:
-        list.append(thing)
-    if cards in list:
-        return render_template('test.html')
+# @app.route('/<path>')
+# def searchbar(cards):
+#     list = []
+#     for thing in data or data2:
+#         list.append(thing)
+#     if cards in list:
+#         return render_template('test.html')
