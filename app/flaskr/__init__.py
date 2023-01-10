@@ -27,4 +27,4 @@ def getPost():
 #     for thing in data or data2:
 #         list.append(thing)
 #     if cards in list:
-#         return render_template('test.html')
+#         return render_template('test.html', data=data, data2=data2)

@@ -2,24 +2,23 @@
 {% block title %} Homepage {% endblock %}
 {% block content %}
 <h1>Homepage</h1>
+<!-- search bar -->
 
-<body>
-    <form method="post">
-        <label for="title">Search</label>
-        <input name="names" id="title" value="{{ request.form['names'] }}" required />
-    </form>
-</body>
+<!-- printing API data -->
 
+<!-- <h2>{{ thing }}</h2> -->
 
-<div class="flex-container">
+<div class= "flex-container">
     {% for thing in data.results %}
     <div class="card">
-        <h2>{{ thing['names']['title'] }}</h2>
-        <img class="pageimage" src="{{ thing['images']['standard'] }}">
-        <h2>{{ thing['prices']}}</h2>
+        <div class="container">
+            <h2 class="card-title">{{ thing['names']['title'] }}</h2>
+        </div>
+        <img class="card-image" id="pageimage" src="{{ thing['images']['standard'] }}">
+        <h2 class="">{{ thing['prices']}}</h2>
+        <button><a href="/product/{{ thing['names']['title'] }}">peska</a></button>
+
     </div>
     {% endfor %}
 </div>
-
-</html>
 {% endblock %}
