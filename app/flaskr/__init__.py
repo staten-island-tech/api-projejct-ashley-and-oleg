@@ -15,7 +15,6 @@ def getPost():
     if request.method == 'POST':
         title = request.form['names']
         data = requests.get(f"https://api.bestbuy.com/v1/products/mostViewed(categoryId=abcat0107000)?format=json&show=name,salePrice,description,image&apiKey=tyP7wRXV364rYiZc16B7dJAt/{title}").json()
-
         print(request.form)
         return render_template('test.html',data=data)
     else:
@@ -31,10 +30,3 @@ def poopy(product):
     else:
         return('U SUCK LOL')
 
-@app.route('/<path>')
-def searchbar(cards):
-    list = []
-    for thing in data or data2:
-        list.append(thing['names']['title'])
-    if cards in list:
-        return render_template('test.html', data=data, data2=data2)
