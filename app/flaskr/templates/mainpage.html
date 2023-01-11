@@ -16,8 +16,7 @@
         </div>
         <img class="card-image" id="pageimage" src="{{ thing['images']['standard'] }}">
         <h2 class="">{{ thing['prices']}}</h2>
-        <button><a href="/product/{{ thing['names']['title'] }}">peska</a></button>
-
+        <button><a href="/product/{{ thing['sku'] }}">peska</a></button>
     </div>
     {% endfor %}
 </div>
