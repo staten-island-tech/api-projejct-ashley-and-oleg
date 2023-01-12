@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: rgb(255, 115, 0);
   overflow: hidden;
   
 }
@@ -18,10 +18,13 @@
 #topnavleft {
   float: left;
   padding-top: 55px;
+  font-size: 25px;
 }
 #topnavright {
   float: right;
   padding-top: 60px;
+  font-size: 25px;
+  font: arial;
 }
 /* Change the color of links on hover */
 
@@ -82,7 +85,9 @@
   margin: 50px auto; /* centers element */
 } 
 #pageimage{
-  width: 50%
+  width: 95%;
+  border: 7px solid black;
+  border-radius: 5%;
 }
 .container {
   text-align: center;
@@ -90,7 +95,7 @@
 .card{
   height: 700px;
   width: 25%;
-  background-color: #f3f4ed;
+  background-color: rgb(255, 115, 0); 
   display: flex;
   align-items: center;
   flex-wrap: wrap;    
@@ -105,12 +110,11 @@
   display: inline-flex;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: #666464;
-  color: black;
+  background-color: rgb(255, 208, 0); ;
   margin-top: 1.5%;
   border: 3px solid black;
   border-radius: 100px;
-  color: #b6e0de;
+  color: rgb(203, 0, 255);;
 }
 .card-img{  
   border-radius: 5%;

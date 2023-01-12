@@ -27,6 +27,7 @@ def poopy(product):
         desc = data['descriptions'] 
         name = data['names']['title'] 
         return render_template('product.html', image=image, desc=desc, name=name) 
+    for sku in data['results']:
+        return render_template('product.html', sku=sku, data=data)
     else:
         return('U SUCK LOL')
-
