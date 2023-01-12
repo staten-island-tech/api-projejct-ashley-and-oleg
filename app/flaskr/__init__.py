@@ -3,7 +3,7 @@ import requests
 import json
 
 data = requests.get("https://api.bestbuy.com/v1/products/mostViewed(categoryId=abcat0107000)?format=json&show=name,salePrice,description,image&apiKey=tyP7wRXV364rYiZc16B7dJAt").json()
-data2 = requests.get("https://api.bestbuy.com/v1/products/8880044/alsoViewed?apiKey=tyP7wRXV364rYiZc16B7dJAt").json()
+data2 = requests.get("https://api.bestbuy.com/v1/products/8880044/alsoViewed?format=json&show=name,salePrice,description,image&apiKey=tyP7wRXV364rYiZc16B7dJAt").json()
 app = Flask(__name__)
 
 @app.route("/")
@@ -14,7 +14,7 @@ def home():
 def getPost():
     if request.method == 'POST':
         title = request.form['names']
-        data = requests.get(f"'https://api.bestbuy.com/v1/products(manufacturer=canon&salePrice<1000)?format=json&show=sku,name,salePrice&apiKey=tyP7wRXV364rYiZc16B7dJAt").json()
+        data = requests.get(f"'https://api.bestbuy.com/v1/products/mostViewed(categoryId=abcat0107000)?format=json&show=name,salePrice,description,image&apiKey=tyP7wRXV364rYiZc16B7dJAt{title}").json()
         print(data)
         return render_template('test.html',data=data)
     else:
