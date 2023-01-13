@@ -1,17 +1,8 @@
 {% extends 'base.html' %}
 {% block title %} Homepage {% endblock %}
 {% block content %}
-<h1>Homepage</h1>
 
-<body>
-    <form method="post">
-        <label for="title">Search</label>
-        <input name="names" id="title" value="{{ request.form['names'] }}" required />
-        <input type="submit" valu e="Save" />
-    </form>
-</body>
-
-<div class="flex-container">
+<div class= "flex-container">
     {% for thing in data.results %}
     <div class="card">
         <div class="container">
@@ -19,8 +10,7 @@
         </div>
         <img class="card-image" id="pageimage" src="{{ thing['images']['standard'] }}">
         <h2 class="">{{ thing['prices']}}</h2>
-        <button><a href="/product/{{ thing['names']['title'] }}">peska</a></button>
-
+        <button class="pagebutton"><a href="/product/{{ thing['sku'] }}">peska</a></button>
     </div>
     {% endfor %}
 </div>
