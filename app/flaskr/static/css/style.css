@@ -3,37 +3,31 @@
 .topnav {
   background-color: rgb(255, 115, 0);
   overflow: hidden;
-  
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: aliceblue;
   text-align: center;
   padding: 15px 16px;
   text-decoration: none;
 }
 #topnavleft {
   float: left;
-  padding-top: 55px;
+  padding-top: 45px;
   font-size: 25px;
 }
 #topnavright {
   float: right;
   padding-top: 60px;
   font-size: 25px;
-  font: arial;
 }
 /* Change the color of links on hover */
 
 
 /* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
 
 .search {
   width: 100%;
@@ -134,7 +128,7 @@
 
 .dropdown .dropbtn {
   cursor: pointer;
-  font-size: 16px;  
+  font-size: 25px;  
   border: none;
   outline: none;
   color: white;
@@ -178,18 +172,13 @@
 .show {
   display: block;
 }
-button{
+.pagebutton{
   border-color: aliceblue;
   border-radius: 20px;
   background-color: #b6e0de;
   margin-bottom: 25px;
 
 }
-
-a:link, a:visited{
-  color: #0394fc;
+a:link {
   text-decoration: none;
-}
-a:hover{
-  color:red;
 }
