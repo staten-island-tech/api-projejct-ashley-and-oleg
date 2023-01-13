@@ -3,7 +3,8 @@
 {% block content %}
 <h1>hi</h1>
 <div class="flex-container">
-    {% for thing in data2.results %}
+    {% for thing in data.results %}
+    {% if camera in thing['name]['title'] %}
     <div class="card">
         <div class="container">
             <h2 class="card-title">{{ thing['names']['title'] }}</h2>
