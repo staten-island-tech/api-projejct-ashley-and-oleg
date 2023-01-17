@@ -37,3 +37,8 @@ def getPost():
         return render_template('mainpage.html')
 
 
+@app.route("/product/<path:product>")
+def poopy(product):
+    for x in data['results']:
+        if x["sku"] == product:
+            return render_template('product.html', x=x)

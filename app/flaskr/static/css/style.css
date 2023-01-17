@@ -79,7 +79,7 @@
   margin: 50px auto; /* centers element */
 } 
 #pageimage{
-  width: 95%;
+  width: 50%; 
   border: 7px solid black;
   border-radius: 5%;
 }
@@ -87,7 +87,7 @@
   text-align: center;
 }
 .card{
-  height: 700px;
+  height: 900px;
   width: 25%;
   background-color: rgb(255, 115, 0); 
   display: flex;
@@ -138,12 +138,9 @@
   margin: 0;
 }
 
-.navbar a:hover > .background , .dropdown:hover .dropbtn, .dropbtn:focus {
+.navbar > a:hover, .background , .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: white;
   color: black;
-  opacity: 100%;
-}
-.background{
   opacity: 100%;
 }
 
