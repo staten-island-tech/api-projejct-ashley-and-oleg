@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="background"> 
+<html lang="en" class="background">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock %}</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %} {% endblock %}</title>
+  <link rel="stylesheet" href="../static/css/style.css">
 </head>
+
 <body>
-<!--     <div class="topnav">
+  <!--     <div class="topnav">
             <a id="tonavleft"><img id="logo"src="../static/img/worstbuy.jpg"></a>
             <a id="topnavright"href="#contact">Contact</a>
             <a id="topnavright"href="#about">About</a>
@@ -22,37 +23,37 @@
                 </div>
             </a>
     </div>   -->
-   <div class="topnav">
-        <a id="tonavleft" class="logo" ><img class="logo" src="../static/img/worstbuy2.jpg"></a>
-        <a id="topnavright" href="#contact">Contact</a>
-        <a id="topnavright" href="#about">About</a>
-        <div id="topnavleft" class="dropdown">
-          <button class="dropbtn" onclick="myFunction()">Dropdown
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content" id="myDropdown">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
+  <div class="topnav">
+    <a id="tonavleft" class="logo"><img class="logo" src="../static/img/worstbuy2.jpg"></a>
+    <a id="topnavright" href="#contact">Contact</a>
+    <a id="topnavright" href="#about">About</a>
+    <div id="topnavleft" class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Products
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="{{ url_for('getStuff') }}">Camera</a>
+        <a href="{{ url_for('getAntenna') }}">Antenna</a>
+        <a href="{{ url_for('getInsigniaProducts') }}">Insignia Products</a>
       </div>
-      <script>
-     /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
+    </div>
+  </div>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
         }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropbtn')) {
-          var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
-            }
-          }
-        }
-        </script>
-    {%block content %} {% endblock %}
+      }
+    }
+  </script>
+  {%block content %} {% endblock %}
 </body>
