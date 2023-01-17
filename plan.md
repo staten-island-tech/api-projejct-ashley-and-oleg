@@ -28,6 +28,3 @@ Possible background for website
 - #f3f4ed and #666464
 - #e9efea and #102e2c
 - #ebd6a8 and #586572
-
-
-https://api.bestbuy.com/v1/products/(name=%22l%22)?format=json&apiKey=tyP7wRXV364rYiZc16B7dJAt

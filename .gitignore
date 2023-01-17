@@ -168,4 +168,3 @@ cython_debug/
 #.idea/
 Scripts
 # End of https://www.toptal.com/developers/gitignore/api/flask
-app/Scripts/flask.exe

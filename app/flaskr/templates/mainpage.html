@@ -2,21 +2,8 @@
 {% block title %} Homepage {% endblock %}
 {% block content %}
 
-<div class="flex-container">
+<div class= "flex-container">
     {% for thing in data.results %}
-    <div class="card">
-        <div class="container">
-            <h2 class="card-title">{{ thing['names']['title'] }}</h2>
-        </div>
-        <img class="card-image" id="pageimage" src="{{ thing['images']['standard'] }}">
-        <h2 class="">{{ thing['prices']}}</h2>
-        <button class="pagebutton"><a href="/product/{{ thing['sku'] }}">peska</a></button>
-    </div>
-    {% endfor %}
-</div>
-
-<div class="flex-container">
-    {% for thing in data2.results %}
     <div class="card">
         <div class="container">
             <h2 class="card-title">{{ thing['names']['title'] }}</h2>
