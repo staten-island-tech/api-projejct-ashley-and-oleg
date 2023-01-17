@@ -11,7 +11,6 @@ def home():
     return render_template('mainpage.html', data=data, data2=data2)
 @app.route("/product/<path:product>")
 def poopy(product):
-    for sku in data['results']:
-        return render_template('product.html', sku=sku, data=data)
-    else:
-        return('U SUCK LOL')
+    for x in data['results']:
+        if x["sku"] == product:
+            return render_template('product.html', x=x)
