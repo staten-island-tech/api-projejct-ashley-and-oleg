@@ -10,6 +10,19 @@ app = Flask(__name__)
 def home():
     return render_template('mainpage.html', data=data, data2=data2)
 @app.route("/product/<path:product>")
+
+@app.route("/camera/")
+def getStuff():
+    return render_template('dropdown1.html', data=data)
+
+@app.route("/antenna/")
+def getAntenna():
+    return render_template('dropdown2.html', data2=data2)
+
+@app.route("/InsigniaProducts/")
+def getInsigniaProducts():
+    return render_template('dropdown3.html', data2=data2)
+
 def poopy(product):
     for x in data['results']:
         if x["sku"] == product:
