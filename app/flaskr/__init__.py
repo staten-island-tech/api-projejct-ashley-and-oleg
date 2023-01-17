@@ -12,9 +12,17 @@ app = Flask(__name__)
 def home():
     return render_template('mainpage.html', data=data, data2=data2)
 
-@app.route("/dropdown/")
+@app.route("/camera/")
 def getStuff():
     return render_template('dropdown1.html', data=data)
+
+@app.route("/antenna/")
+def getAntenna():
+    return render_template('dropdown2.html', data2=data2)
+
+@app.route("/InsigniaProducts/")
+def getInsigniaProducts():
+    return render_template('dropdown3.html', data2=data2)
 
 
 @app.route('/', methods=('GET', 'POST'))
@@ -28,14 +36,4 @@ def getPost():
     else:
         return render_template('mainpage.html')
 
-@app.route("/product/<path:product>")
-def poopy(product):
-    if product in data: 
-        image = data['images'] 
-        desc = data['descriptions'] 
-        name = data['names']['title'] 
-        return render_template('product.html', image=image, desc=desc, name=name) 
-    for sku in data['results']:
-        return render_template('product.html', sku=sku, data=data)
-    else:
-        return('U SUCK LOL')
+
