@@ -178,7 +178,7 @@
 .show {
   display: block;
 }
-button{
+#button{
   border-color: aliceblue;
   border-radius: 20px;
   background-color: #b6e0de;
