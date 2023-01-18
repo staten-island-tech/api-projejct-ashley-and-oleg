@@ -85,12 +85,13 @@
   margin: 50px auto; /* centers element */
 } 
 #pageimage{
-  width: 55%;
+  width: 50%;
   border: 7px solid black;
   border-radius: 5%;
 }
 .container {
   text-align: center;
+  align-self: center;
 }
 .card{
   height: 800px;
@@ -183,7 +184,8 @@
   border-radius: 20px;
   background-color: #b6e0de;
   margin-bottom: 25px;
-
+  width: 200px;
+  height: 50px;
 }
 
 a:link, a:visited{
@@ -192,4 +194,12 @@ a:link, a:visited{
 }
 a:hover{
   color:red;
+}
+#textsizeup{
+  font-size: 150px;
+}
+#errorimage{
+  border: 10px solid  rgb(255, 208, 0);
+  border-radius: 3%;
+  text-align: center;
 }

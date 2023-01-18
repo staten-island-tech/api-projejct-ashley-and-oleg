@@ -1,0 +1,23 @@
+.leftsidebar{
+    height: 1000px;
+    width: 250px;
+    background-color: rgb(255, 115, 0);
+    margin: 1.5%;
+    margin-top: -28.62%
+    
+}
+.maincontent{
+    margin-left: 50px;
+}
+#background{
+    background-color: rgb(255, 161, 255) ;
+    margin-top: 2%;
+}
+.textsizing{
+    font-size: 37px;
+    padding-left: 200px;
+}
+.pageimage{
+    width: 25%;
+
+}
