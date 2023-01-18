@@ -85,7 +85,7 @@
   margin: 50px auto; /* centers element */
 } 
 #pageimage{
-  width: 75%;
+  width: 55%;
   border: 7px solid black;
   border-radius: 5%;
 }
@@ -93,7 +93,7 @@
   text-align: center;
 }
 .card{
-  height: 700px;
+  height: 800px;
   width: 25%;
   background-color: rgb(255, 115, 0); 
   display: flex;
