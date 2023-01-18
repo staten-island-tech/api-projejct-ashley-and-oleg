@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
-{% block title %} Homepage {% endblock %}
+{% block title %} Dropdown {% endblock %}
 {% block content %}
 
-<div class= "flex-container">
+<div class="flex-container">
     {% for thing in data.results %}
+    {% if 'Camera' in thing['names']['title'] %}
     <div class="card">
         <div class="container">
             <h2 class="card-title">{{ thing['names']['title'] }}</h2>
@@ -12,6 +13,7 @@
         <h2 class="">{{ thing['prices']}}</h2>
         <button class="pagebutton"><a href="/product/{{ thing['sku'] }}">peska</a></button>
     </div>
+    {% endif %}
     {% endfor %}
 </div>
 {% endblock %}
