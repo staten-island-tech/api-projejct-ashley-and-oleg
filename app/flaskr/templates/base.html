@@ -24,7 +24,7 @@
             </a>
     </div>   -->
   <div class="topnav">
-    <a id="tonavleft" class="logo"><img class="logo" src="../static/img/worstbuy2.jpg"></a>
+    <a id="tonavleft" class="logo" href='/'><img class="logo" src="../static/img/worstbuy2.jpg"></a>
     <a id="topnavright" href="#contact">Contact</a>
     <a id="topnavright" href="#about">About</a>
     <div id="topnavleft" class="dropdown">
@@ -32,8 +32,8 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content" id="myDropdown">
-        <a href="{{ url_for('getStuff') }}">Camera</a>
-        <a href="{{ url_for('getAntenna') }}">Antenna</a>
+        <a href="{{ url_for('getStuff') }}">Cameras</a>
+        <a href="{{ url_for('getTopProducts') }}">Top Products</a>
         <a href="{{ url_for('getInsigniaProducts') }}">Insignia Products</a>
       </div>
     </div>

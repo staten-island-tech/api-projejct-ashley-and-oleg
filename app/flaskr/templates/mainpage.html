@@ -9,7 +9,7 @@
             <h2 class="card-title">{{ thing['names']['title'] }}</h2>
         </div>
         <img class="card-image" id="pageimage" src="{{ thing['images']['standard'] }}">
-        <h2 class="">{{ thing['prices']}}</h2>
+        <h2 class="">Regular: ${{ thing['prices']['regular']}}, Current: ${{ thing['prices']['current']}} </h2>
         <button class="pagebutton"><a href="/product/{{ thing['sku'] }}">peska</a></button>
     </div>
     {% endfor %}
@@ -22,7 +22,8 @@
             <h2 class="card-title">{{ thing['names']['title'] }}</h2>
         </div>
         <img class="card-image" id="pageimage" src="{{ thing['images']['standard'] }}">
-        <h2 class="">{{ thing['prices']}}</h2>
+        <h2 class="">Regular: ${{ thing['prices']['regular']}}, Current: ${{ thing['prices']['current']}}
+        </h2>
         <button class="pagebutton"><a href="/product/{{ thing['sku'] }}">peska</a></button>
     </div>
     {% endfor %}

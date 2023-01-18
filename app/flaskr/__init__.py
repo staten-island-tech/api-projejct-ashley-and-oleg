@@ -16,8 +16,8 @@ def home():
 def getStuff():
     return render_template('dropdown1.html', data=data)
 
-@app.route("/antenna/")
-def getAntenna():
+@app.route("/TopProducts/")
+def getTopProducts():
     return render_template('dropdown2.html', data2=data2)
 
 @app.route("/InsigniaProducts/")
@@ -40,5 +40,8 @@ def getPost():
 @app.route("/product/<path:product>")
 def poopy(product):
     for x in data['results']:
+        if x["sku"] == product:
+            return render_template('product.html', x=x)
+    for x in data2['results']:
         if x["sku"] == product:
             return render_template('product.html', x=x)

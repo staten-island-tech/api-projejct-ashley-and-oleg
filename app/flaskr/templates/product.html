@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block title %} Homepage {% endblock %}
 {% block content %}
-
 <h2>{{ x['names']['title'] }}</h2>
-
-
+<img id="pageimage" src="{{ x['images']['standard'] }}">
+<h2>Customer Reviews: {{x['customerReviews']['averageScore']}} / 5.0 Stars</h2>
+<button class="pagebutton"><a href="{{x['links']['web']}}">Buy</a></button>
 {% endblock %}

@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% block title %} Dropdown {% endblock %}
 {% block content %}
-
+<div class='container' style='font-family:cursive;'>
+    <h1>Products with higher than 4.7/5.0 stars</h1>
+</div>
 <div class="flex-container">
     {% for thing in data2.results %}
-    {% if 'Antenna' in thing['names']['title'] %}
+    {% if thing['customerReviews']['averageScore'] >= 4.7 %}
     <div class="card">
         <div class="container">
             <h2 class="card-title">{{ thing['names']['title'] }}</h2>
