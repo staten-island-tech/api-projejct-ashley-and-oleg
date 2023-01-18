@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% block title %} Homepage {% endblock %}
 {% block content %}
-
-<h2>{{ x['sku'] }}</h2>
-
+<div class="leftsidebar">
+    <h2>{{ x['sku'] }}</h2>
+    <h2>{{ x['names']['title'] }}</h2>
+</div>
 {% endblock %}
