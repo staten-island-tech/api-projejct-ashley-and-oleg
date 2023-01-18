@@ -3,6 +3,7 @@
 {% block content %}
 
 {% for thing in data.results %}
+<<<<<<< HEAD
     <div class="card">
         <div class="container">
             <h2 class="card-title">{{ thing['names']['title'] }}</h2>
@@ -11,6 +12,9 @@
         <h2 class="">{{ thing['prices']}}</h2>
         <button><a href="/product/{{ thing['sku'] }}">peska</a></button>
     </div>
+=======
+    <h2>{{ thing['names']['title'] }}</h2>
+>>>>>>> parent of 0ca4d89 (dsadsa)
 {% endfor %}
 
 {% endblock %}

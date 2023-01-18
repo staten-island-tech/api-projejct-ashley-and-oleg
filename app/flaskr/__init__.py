@@ -13,4 +13,4 @@ def home():
 def poopy(product):
         for x in data['results']:
             if x["sku"] == product:
-                return render_template('product.html', x=x)
+                return render_template('product.html', x=x, data=data)
