@@ -12,6 +12,10 @@ app = Flask(__name__)
 def home():
     return render_template('mainpage.html', data=data, data2=data2)
 
+@app.route("/about")
+def getAbout():
+    return render_template('about.html')
+
 @app.route("/camera/")
 def getStuff():
     return render_template('dropdown1.html', data=data)
@@ -45,3 +49,4 @@ def poopy(product):
     for x in data2['results']:
         if x["sku"] == product:
             return render_template('product.html', x=x)
+
