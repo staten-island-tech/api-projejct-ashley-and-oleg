@@ -1,9 +1,9 @@
 .leftsidebar{
-    height: 1000px;
+    height: 2000px;
     width: 250px;
     background-color: rgb(255, 115, 0);
     margin: 1.5%;
-    margin-top: -19.57%
+    margin-top: -100%
     
 }
 .maincontent{
@@ -11,12 +11,32 @@
 }
 #background{
     background-color: rgb(255, 161, 255) ;
-    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 5%;
 }
 .textsizing{
-    font-size: 37px;
+    font-size: 32px;
     padding-left: 70px;
 }
-.pageimage{
-    width: 15%;
+.productimage{
+    width: 20%;
+    border-radius: 20%;
+    border: 3px solid black;
+}
+.textAll{
+    margin-top: 4%;
+}
+.buttonproduct {
+    background-color: rgb(255, 115, 0);
+        border: none;
+        color: rgb(255, 115, 0);
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border: 3px solid black;
+        border-radius: 50%;
 }

@@ -3,8 +3,10 @@
 {% block content %}
 <div class="maincontent">
     <div class="container" id="background">
-        <h2 class="textsizing">{{ x['names']['title'] }}</h2>
-        <img class="pageimage" src="{{ x['images']['standard']}}"> 
+        <h2 class="textsizing textAll" textAll>{{ x['names']['title'] }}</h2>
+        <img class="productimage textAll" src="{{ x['images']['standard']}}">
+        <h2>Customer Reviews: {{x['customerReviews']['averageScore']}} / 5.0 Stars</h2>
+        <a href="{{ x['links']['web']}}" class="textAll buttonproduct">Buy</a>
     </div>
 </div>  
     <div class="leftsidebar">
