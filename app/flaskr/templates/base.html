@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" class="background">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %} {% endblock %}</title>
   <link rel="stylesheet" href="../static/css/style.css">
-</head>
-
+  <link rel="stylesheet" href="../static/css/product.css">    
 <body>
+  <!--     <div class="topnav">
+            <a id="tonavleft"><img id="logo"src="../static/img/worstbuy.jpg"></a>
+            <a id="topnavright"href="#contact">Contact</a>
+            <a id="topnavright"href="#about">About</a>
+            <a id="topnavright">
+                <div class="search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Submit<i class="search"></i></button>
+                    </form>
+                </div>
+            </a>
+    </div>   -->
   <div class="topnav">
     <a id="tonavleft" class="logo" href='/'><img class="logo" src="../static/img/worstbuy2.jpg"></a>
-    <a id="topnavright" href="">About</a>
+    <a id="topnavright" href="{{ url_for('getAbout')}}">About</a>
     <div id="topnavleft" class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">Products
+      <button class="dropbtn"onclick="myFunction()">Products
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content" id="myDropdown">
-        <a href="">Cameras</a>
-        <a href="">Top Products</a>
-        <a href="">Insignia Products</a>
+        <a href="{{ url_for('getStuff') }}">Cameras</a>
+        <a href="{{ url_for('getTopProducts') }}">Top Products</a>
+        <a href="{{ url_for('getInsigniaProducts') }}">Insignia Products</a>
       </div>
     </div>
   </div>
